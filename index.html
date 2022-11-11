@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Holiday</title>
+    <meta name="Description" content="Find Your Holiday Today" />
+    <link rel="stylesheet" href="Stylesheet.css" />
+  </head>
+  <body>
+  <h1>FindYourHolidayToday</h1>
+
+  
+  
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    
+      
+    <ul>
+
+      <li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
+      <li><a href="http://127.0.0.1:5501/about.html">About & Contact</a></li>
+      <li><a href="http://127.0.0.1:5501/discover.html">Discover</a></li>
+      
+    </ul>
+  </nav>
+  <h2><marquee bgcolor="#b39e5e" >From the glistening seas of the Maldives to the city of Bradford, brimming with tradition and culture, we got it all.......From the glistening seas of the Maldives to the city of Bradford, brimming with tradition and culture, we got it all......</marquee></h2>
+
+  <h4>Welcome to FindYourHolidayToday where we present to you the best of holiday packages by scouring the net, so YOU dont have to</h4>
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="https://img.huffingtonpost.com/asset/5c3732d32600002206865048.jpeg?ops=scalefit_720_noupscale&format=webp" style="width:100%">
+    <div class="text"><span style="font-size: 70px "><b>Tokyo, Japan</b></span></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="https://img.huffingtonpost.com/asset/5c36256f1d0000e501330bdc.jpeg?ops=scalefit_720_noupscale&format=webp" style="width:100%">
+    <div class="text"><span style="font-size: 70px "><b>Lake Bled, Slovenia</b></span></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="https://img.huffingtonpost.com/asset/5c373343240000b600c4679e.jpeg?ops=scalefit_720_noupscale&format=webp" style="width:100%">
+    <div class="text"><span style="font-size: 70px "><b>New Forest, England</b></span></div>
+  </div>
+  
+  <div class="mySlides fade">
+      <div class="numbertext">4/4</div>
+      <img src="https://img.huffingtonpost.com/asset/5c373a6c23000036003dfa28.jpeg?ops=scalefit_720_noupscale&format=webp" style="width:100%">
+      <div class="text"><span style="font-size: 70px "><b>Puerto Vallarta, Mexico
+      </b></span></div>
+    </div>
+    
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+  </div>
+  
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); }
+  </script>
+  
+  </body>
+  <footer>
+      <p>
+        Find Your Holiday Today - Copyright &copy; 2022
+        <a
+          class="fab fa-linkedin"
+          href="https://www.linkedin.com/in/hanzala-chowdhury-6827b5244/"
+          target="_blank"
+        ></a>
+        <a
+          class="fab fa-github"
+          href="https://github.com/Hanzala103/Code-the-future"
+          target="_blank"
+        ></a>
+      </p>
+    </footer>
+  </html> 
